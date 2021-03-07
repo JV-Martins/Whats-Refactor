@@ -16,8 +16,17 @@
 </head>
 
 <body>
+
+    <span id="nova-conversa" class="fixed p-4 w-16 h-16 bottom-5 right-5 bg-green-500 text-white rounded-full text-center shadow-lg text-sm">
+        <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 525.153 525.153" style="enable-background:new 0 0 525.153 525.153; width: 30px; height: 30px; color: #fff;" xml:space="preserve">
+            <g>
+                <path d="M524.934,52.515C524.934,23.61,501.521,0,472.659,0H52.471C23.632,0,0,23.632,0,52.515v315.091   c0,28.84,23.632,52.472,52.471,52.472H420.1l105.052,105.074L524.934,52.515z M420.1,315.092H105.052v-52.515H420.1V315.092z    M420.1,236.341H105.052v-52.537H420.1V236.341z M420.1,157.524H105.052v-52.471H420.1V157.524z"/>
+            </g>
+        </svg>
+    </span>
+
     <div class="bg-gray-700 w-full">
-        <div class="p-2 flex">
+        <div class="p-2 flex" id="div-header">
             <div name="Whatsapp" class="text-gray-400 w-1/2 px-1 text-xl m-2 flex-auto font-semibold">
                 Whatsapp
             </div>
@@ -37,9 +46,9 @@
                 </svg>
             </div>
         </div>
-        <Div class=" flex flex-row text-l ">
+        <div class=" flex flex-row text-l " id="div-menu-opcoes">
             <div name="camera"
-                class="md:text-gray-400 p-2 px-3 flex font-semibold border-b md:border-transparent hover:text-green-500  hover:border-green-500  text-gray-400">
+                class="md:text-gray-400 p-2 px-3 flex font-semibold border-b md:border-transparent hover:text-green-500  hover:border-green-500 cursor-pointer text-gray-400">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                     stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                     <g transform="translate(2 3)">
@@ -50,20 +59,22 @@
                 </svg>
             </div>
             <div
-                class="md:text-gray-400 p-2 flex-grow font-semibold border-b md:border-transparent hover:text-green-500  hover:border-green-500  text-gray-400 ">
+                class="md:text-gray-400 p-2 flex-grow font-semibold border-b md:border-transparent hover:text-green-500 hover:border-green-500 cursor-pointer text-gray-400 ">
                 <p class="text-center">CONVERSAS</p>
             </div>
             <div
-                class=" p-2 flex-grow font-semibold border-b md:border-transparent hover:text-green-500  hover:border-green-500  text-gray-400">
+                class=" p-2 flex-grow font-semibold border-b md:border-transparent hover:text-green-500  hover:border-green-500 cursor-pointer text-gray-400">
                 <p class="text-center">STATUS</p>
             </div>
             <div
-                class="md:text-gray-400 p-2 flex-grow font-semibold border-b md:border-transparent hover:text-green-500  hover:border-green-500  text-gray-400">
+                class="md:text-gray-400 p-2 flex-grow font-semibold border-b md:border-transparent hover:text-green-500  hover:border-green-500 cursor-pointer text-gray-400">
                 <p class="text-center">CHAMADAS</p>
             </div>
-        </Div>
-        <div class="f-full h-screen bg-gray-800">
-            <div name="conversa2" class="flex">
+        </div>
+
+        <div class="f-full h-screen bg-gray-800" id="div-conversas">
+            <!-- Conversa -->
+            <div name="conversa2" class="flex transition duration-150 hover:bg-gray-700 cursor-pointer">
                 <div name="imagemGrupo" class="text-green-500 p-3">
                     <svg xmlns="http://www.w3.org/2000/svg" class="w-16 h-16" viewBox="0 0 24 24" fill="none"
                         stroke="currentColor" stroke-width="1" stroke-linecap="square" stroke-linejoin="arcs">
@@ -79,7 +90,8 @@
                     </div>
                 </div>
             </div>
-            <div name="conversa2" class="flex">
+            <!-- Conversa -->
+            <div name="conversa2" class="flex transition duration-150 hover:bg-gray-700 cursor-pointer">
                 <div name="imagemGrupo" class="text-green-500 p-3">
                     <svg xmlns="http://www.w3.org/2000/svg" class="w-16 h-16" viewBox="0 0 24 24" fill="none"
                         stroke="currentColor" stroke-width="1" stroke-linecap="square" stroke-linejoin="arcs">
@@ -95,7 +107,8 @@
                     </div>
                 </div>
             </div>
-            <div name="conversa2" class="flex">
+            <!-- Conversa -->
+            <div name="conversa2" class="flex transition duration-150 hover:bg-gray-700 cursor-pointer">
                 <div name="imagemGrupo" class="text-green-500 p-3">
                     <svg xmlns="http://www.w3.org/2000/svg" class="w-16 h-16" viewBox="0 0 24 24" fill="none"
                         stroke="currentColor" stroke-width="1" stroke-linecap="square" stroke-linejoin="arcs">
@@ -111,7 +124,8 @@
                     </div>
                 </div>
             </div>
-            <div name="conversa2" class="flex">
+            <!-- Conversa -->
+            <div name="conversa2" class="flex transition duration-150 hover:bg-gray-700 cursor-pointer">
                 <div name="imagemGrupo" class="text-green-500 p-3">
                     <svg xmlns="http://www.w3.org/2000/svg" class="w-16 h-16" viewBox="0 0 24 24" fill="none"
                         stroke="currentColor" stroke-width="1" stroke-linecap="square" stroke-linejoin="arcs">
@@ -127,7 +141,8 @@
                     </div>
                 </div>
             </div>
-            <div name="conversa2" class="flex">
+            <!-- Conversa -->
+            <div name="conversa2" class="flex transition duration-150 hover:bg-gray-700 cursor-pointer">
                 <div name="imagemGrupo" class="text-green-500 p-3">
                     <svg xmlns="http://www.w3.org/2000/svg" class="w-16 h-16" viewBox="0 0 24 24" fill="none"
                         stroke="currentColor" stroke-width="1" stroke-linecap="square" stroke-linejoin="arcs">
